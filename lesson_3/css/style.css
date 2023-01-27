@@ -1,0 +1,74 @@
+@import url("reset.css");
+
+{
+	color: blue;
+}*/
+
+div {
+	color: green;
+}
+
+a {
+	color: red;
+}
+
+.text {
+	color: blueviolet;
+}
+
+#p-1 {
+	color: yellow;
+}
+
+#p-2 {
+	color: aqua;
+}
+
+#p-3 {
+	color: rgb(255, 0, 170);
+}
+
+#p-4 {
+	color: rgb(0, 255, 76);
+}
+
+div.text {
+	color: brown;
+}
+
+.lesson {
+	color: brown;
+}
+
+.text {
+	color: purple;
+}
+
+.lesson,
+.text {
+	color: palevioletred;
+}
+
+.text p {
+	color: red;
+}
+
+.text * {
+	color: green;
+}
+
+.text > p {
+	color: red;
+}
+
+.text ~ p {
+	color: red;
+}
+
+.text + p {
+	color: red;
+}
+
+[class*="__container"] {
+	color: green;
+}
