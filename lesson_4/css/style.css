@@ -1,0 +1,94 @@
+@import url("reset.css");
+
+@font-face {
+	font-family: "Circular Std";
+	src: url("/fonts/CircularStd-Bold.woff2") format("woff2"), url("../fonts/CircularStd-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Circular Std";
+	src: url("../fonts/CircularStd-Book.woff2") format("woff2"), url("../fonts/CircularStd-Book.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Eugusto Free Font";
+	src: url(../fonts/Eugusto\ Free\ Font.otf);
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "ComforterBrush-Regular";
+	src: url(../fonts/ComforterBrush-Regular.otf);
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+.title {
+	font-family: "Cookie";
+	font-size: 30px;
+	font-style: italic;
+	color: blue;
+	font-weight: 500;
+	text-align: center;
+	text-shadow: 2px 2px 5px rgba(19, 3, 241, 0.432), 2px 2px 2px rgb(0, 174, 255)
+}
+
+.about {
+	font-family: "Itim";
+	font-size: 18px;
+	color: green;
+	font-weight: 300;
+	text-align: justify;
+}
+
+.about_title {
+	font-style: italic;
+	text-decoration: underline;
+}
+
+.history {
+	font-family: "Dancing Script";
+	font-size: 25px;
+	color: rebeccapurple;
+	text-align: center;
+}
+.history_1 {
+	font-family: "Fredoka One";
+	font-size: 15px;
+	color: rgb(173, 62, 62);
+	text-align: right;
+}
+
+.history_2 {
+	font-family: "Circular Std";
+	font-size: 20px;
+	color: peru;
+	text-align: left;
+	font-weight: 500;
+}
+.history_3 {
+	font-family: "Eugusto Free Font";
+	font-size: 20px;
+	color: rgb(154, 202, 21, 0.8);
+	font-weight: 700;
+	word-spacing: 5px;
+}
+.climate {
+	font-family: "ComforterBrush-Regular";
+	text-indent: 30px;
+	font-size: 30px;
+	color: rgb(19, 107, 107);
+}
+
+.wrap {
+	text-align: center;
+}
