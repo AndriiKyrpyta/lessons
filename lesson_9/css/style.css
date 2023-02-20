@@ -1,0 +1,57 @@
+@import url(reset.css);
+
+body {
+	font-family: Georgia, serif;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 1.78;
+	color: rgba(61, 21, 204);
+	text-align: center;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+header, footer {
+	background: rgb(11,169,240);
+	background: linear-gradient(90deg, rgba(11,169,240,1) 0%, rgba(224,255,0,1) 100%);
+	border-radius: 20px;
+	padding: 15px 0;
+}
+
+main {
+	background: url("../img/main.webp") 50% 0 no-repeat;
+	background-size: cover;
+	border-radius: 20px;
+}
+
+.icons, .design, .content {
+	padding: 15px 0;
+}
+
+.icons img {
+	background: rgba(11, 167, 240, 0.466);
+	border-radius: 10px;
+	min-width: 50px;
+	height: 50px;
+	padding: 2px;
+}
+
+.design img {
+	background: rgba(11, 167, 240, 0.507);
+	border-radius: 10px;
+	max-width: 300px;
+	max-height: 300px;
+	padding: 5px;
+	margin: 5px;
+}
+
+.content img {
+	background: rgba(11, 167, 240, 0.507);
+	border-radius: 10px;
+	max-width: 300px;
+	max-height: 300px;
+	padding: 5px;
+	margin: 5px;
+}
