@@ -1,0 +1,309 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+}
+
+[class*="__container"] {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+}
+
+.wrapper{
+	overflow: hidden;
+	min-width: 100%;
+}
+
+.title {
+	padding: 20px;
+	color: purple;
+}
+
+/*================================*/
+
+.header{
+
+}
+.header__container, .footer__container {
+	background: radial-gradient(circle at 50% 15.07%, #ffde85 0, #ffe477 4.55%, #ffea6a 9.09%, #ffef5e 13.64%, #fff353 18.18%, #fff64a 22.73%, #fff843 27.27%, #e8f93f 31.82%, #ccf93f 36.36%, #acf843 40.91%, #86f64a 45.45%, #53f253 50%, #00ee5f 54.55%, #00ea6e 59.09%, #00e67f 63.64%, #00e292 68.18%, #00dea7 72.73%, #00dbbc 77.27%, #00d8d3 81.82%, #00d5ea 86.36%, #00d3ff 90.91%, #00d1ff 95.45%, #00cfff 100%);;
+	border-radius: 10px;
+}
+
+/*================================*/
+.main__container{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	margin-bottom: 20px;
+}
+.page__translate, .page__scale, .page__rotate, .page__skew, .page__matrix, .page__backface, .page__trs, .page__origin, .page__perspective, .page__translate3d, .page__scale3d, .page__rotate3d, .page__matrix3d, .page__m3d, .page__style{
+	width: 200px;
+	height: 200px;
+	background-color: rgba(24, 181, 63, 0.479);
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 15px;
+}
+.page__translate-content, .page__scale-content, .page__rotate-content, .page__skew-content, .page__matrix-content, .page__backface-content, .page__trs-content, .page__origin-content, .page__perspective-content, .page__translate3d-content, .page__scale3d-content, .page__rotate3d-content, .page__matrix3d-content, .page__m3d-content, .page__style-content {
+	background: radial-gradient(circle at 50% 50%, #ffde85 0, #ffe477 4.55%, #ffea6a 9.09%, #ffef5e 13.64%, #fff353 18.18%, #fff64a 22.73%, #fff843 27.27%, #e8f93f 31.82%, #ccf93f 36.36%, #acf843 40.91%, #86f64a 45.45%, #53f253 50%, #00ee5f 54.55%, #00ea6e 59.09%, #00e67f 63.64%, #00e292 68.18%, #00dea7 72.73%, #00dbbc 77.27%, #00d8d3 81.82%, #00d5ea 86.36%, #00d3ff 90.91%, #00d1ff 95.45%, #00cfff 100%);;
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+}
+.page__translate-content:hover{
+	transform: translate(30px, 30px);
+}
+.page__scale-content:hover{
+	transform: scale(2);
+}
+.page__rotate-content:hover{
+	transform: rotate(45deg);
+}
+.page__skew-content:hover{
+	transform: skew(10deg,10deg);
+}
+.page__matrix-content:hover{
+	transform: matrix(0.5, 0.1, 0.1, 0.5, 10, 15);
+}
+.page__backface{
+	perspective:400px;
+}
+.page__backface-content:hover {
+	transform: rotateY(150deg);
+	backface-visibility: hidden;
+}
+.page__trs-content:hover {
+	transform: translate(30px, 30px) rotate(45deg) scale(0.8);
+}
+.page__origin-content:hover {
+	transform-origin:top left;
+	transform: rotate(45deg);
+}
+.page__perspective{
+	perspective: 400px;
+	perspective-origin: center;
+}
+.page__perspective-content:hover {
+	transform: rotateX(45deg);
+}
+.page__translate3d, .page__scale3d, .page__rotate3d, .page__matrix3d, .page__m3d{
+	perspective: 400px;
+}
+.page__translate3d-content:hover {
+	transform: translate3d(30px, 30px, 30px);
+}
+.page__scale3d-content:hover {
+	transform: scale3d(1.5, 1.5, 1.5);
+}
+.page__rotate3d-content:hover {
+	transform: rotate3d(1, 1, 1, 45deg);
+}
+.page__matrix3d-content:hover {
+	transform: matrix3d(0.94,0,0.34,0,0.00,0.94,0.34,0,-0.34,-0.34,0.8835999999999999,0,2,2,0,1);
+	-webkit-transform: matrix3d(0.94,0,0.34,0,0.00,0.94,0.34,0,-0.34,-0.34,0.8835999999999999,0,2,2,0,1);
+}
+.page__m3d-content:hover {
+	transform: translate3d(30px, 30px,30px) rotate3d(1,1,1,30deg);
+}
+.page__style{
+	perspective:400px;
+	transform-style:preserve-3d;
+}
+.page__style-content:hover {
+	transform: rotateY(30deg);
+}
+
+/*=====================================*/
+
+.page__himars{
+	background: url(../img/fon.jpg) no-repeat center;
+	min-width: 985px;
+	min-height: 659px;
+	border-radius: 15px;
+}
+.himars__car{
+	padding-top: 550px;
+	position: relative;
+}
+.himars__wheel {
+}
+.wheel:hover {
+
+
+}
+.wheel__tire--one {
+	height: 100px;
+	width: 100px;
+	background-color: rgb(43, 44, 43);
+	border-radius: 50%;
+	border: 10px solid; 
+	border-style: dashed;
+	position: absolute;
+	top: 500px;
+	left: 100px;
+	z-index: 50;
+}
+.wheel__tire--one:hover{
+	transform: rotate(180deg);
+	transition: 0.5s;
+}
+.wheel__disk--one {
+	height: 50px;
+	width: 50px;
+	background-color: rgb(29, 80, 29);
+	border-radius: 50%;
+	position: absolute;
+	top: 525px;
+	left: 125px;
+	z-index: 50;
+}
+.wheel__tire--two{
+	height: 100px;
+	width: 100px;
+	background-color: rgb(43, 44, 43);
+	border-radius: 50%;
+	border: 10px solid; 
+	border-style: dashed;
+	position: absolute;
+	top: 500px;
+	left: 250px;
+	z-index: 50;
+}
+.wheel__tire--two:hover{
+	transform: rotate(180deg);
+	transition: 0.5s;
+}
+.wheel__disk--two {
+	height: 50px;
+	width: 50px;
+	background-color: rgb(29, 80, 29);
+	border-radius: 50%;
+	position: absolute;
+	top: 525px;
+	left: 275px;
+	z-index: 50;
+}
+.wheel__tire--three{
+	height: 100px;
+	width: 100px;
+	background-color: rgb(43, 44, 43);
+	border-radius: 50%;
+	border: 10px solid; 
+	border-style: dashed;
+	position: absolute;
+	top: 500px;
+	left: 550px;
+	z-index: 50;
+}
+.wheel__tire--three:hover{
+	transform: rotate(180deg);
+	transition: 0.5s;
+}
+.wheel__disk--three {
+	height: 50px;
+	width: 50px;
+	background-color: rgb(29, 80, 29);
+	border-radius: 50%;
+	position: absolute;
+	top: 525px;
+	left: 575px;
+	z-index: 50;
+}
+.himars__frame{
+	height: 50px;
+	width: 550px;
+	background-color: rgb(29, 80, 29);
+	border-radius: 5px;
+	position: absolute;
+	top: 500px;
+	left: 100px;
+}
+.himars__cabin{
+	height: 150px;
+	width: 100px;
+	background-color: rgb(29, 80, 29);
+	border-radius: 5px;
+	border-top-right-radius: 40px;
+	position: absolute;
+	top: 345px;
+	left: 550px;
+}
+.cabin{
+	perspective: 400px;
+}
+.cabin__glass {
+	height: 50px;
+	width: 90px;
+	background-color: rgb(38, 187, 233);
+	border-radius: 5px;
+	border-top-right-radius: 40px;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+.cabin__glass:hover{
+	opacity: 0;
+	transition: 1s;
+}
+.cabin__glass--soldier{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+.cabin__door {
+	height: 80px;
+	width: 90px;
+	background-color: rgb(65, 177, 65);
+	border-radius: 5px;
+	position: absolute;
+	top: 60px;
+	left: 5px;
+}
+
+.cabin__door:hover{
+	transform-origin:bottom right;
+	transform: rotateY(45deg);
+	transition: 0.3s;
+}
+
+.himars__rocket-boxing {
+	height: 145px;
+	width: 350px;
+	background-color: rgb(29, 80, 29);
+	border-radius: 5px;
+	position: absolute;
+	top: 350px;
+	left: 100px;
+}
+.himars__rocket-boxing:hover{
+	transform-origin:bottom left;
+	transform: rotate(-30deg);
+	transition: 1s;
+}
+.rocket-boxing__trunk {
+	height: 35px;
+	width: 420px;
+	background-color: rgb(65, 177, 65);
+	border-radius: 5px;
+	position: absolute;
+	top: 10px;
+	left: 5px;
+}
+.rocket-boxing__flag{
+	height: 50px;
+	width: 60px;
+	background: linear-gradient(180deg, rgba(11,169,240,1) 40%, rgba(224,255,0,1) 50%);
+	border-radius: 5px;
+	position: absolute;
+	top: 60px;
+	left: 140px;
+}
