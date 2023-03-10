@@ -1,0 +1,315 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+}
+
+[class*="__container"] {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+}
+
+.wrapper{
+	overflow: hidden;
+	min-width: 100%;
+}
+
+.title {
+	padding: 20px;
+	color: purple;
+}
+
+/*================================*/
+
+.header__container, .footer__container {
+	background: linear-gradient(180deg, rgba(11,169,240,1) 40%, rgba(224,255,0,1) 50%);
+	border-radius: 10px;
+}
+/*=====================================*/
+
+.page__himars{
+	background: url(../img/fon.jpg) no-repeat center;
+	min-width: 985px;
+	min-height: 659px;
+	border-radius: 15px;
+}
+.himars__car{
+	padding-top: 550px;
+	position: relative;
+	animation: himars-ride 10s forwards;
+}
+
+.wheel__tire--one {
+	height: 100px;
+	width: 100px;
+	background-color: rgb(43, 44, 43);
+	border-radius: 50%;
+	border: 10px solid; 
+	border-style: dashed;
+	position: absolute;
+	top: 500px;
+	left: 100px;
+	z-index: 50;
+	animation: himars-wheels 3s linear;
+}
+.wheel__tire--one:hover{
+	transform: rotate(180deg);
+	transition: 0.5s;
+}
+.wheel__disk--one {
+	height: 50px;
+	width: 50px;
+	background-color: rgb(29, 80, 29);
+	border-radius: 50%;
+	position: absolute;
+	top: 525px;
+	left: 125px;
+	z-index: 50;
+}
+.wheel__tire--two{
+	height: 100px;
+	width: 100px;
+	background-color: rgb(43, 44, 43);
+	border-radius: 50%;
+	border: 10px solid; 
+	border-style: dashed;
+	position: absolute;
+	top: 500px;
+	left: 250px;
+	z-index: 50;
+	animation: himars-wheels 3s linear;
+}
+.wheel__tire--two:hover{
+	transform: rotate(180deg);
+	transition: 0.5s;
+}
+.wheel__disk--two {
+	height: 50px;
+	width: 50px;
+	background-color: rgb(29, 80, 29);
+	border-radius: 50%;
+	position: absolute;
+	top: 525px;
+	left: 275px;
+	z-index: 50;
+}
+.wheel__tire--three{
+	height: 100px;
+	width: 100px;
+	background-color: rgb(43, 44, 43);
+	border-radius: 50%;
+	border: 10px solid; 
+	border-style: dashed;
+	position: absolute;
+	top: 500px;
+	left: 550px;
+	z-index: 50;
+	animation: himars-wheels 3s linear;
+}
+.wheel__tire--three:hover{
+	transform: rotate(180deg);
+	transition: 0.5s;
+}
+.wheel__disk--three {
+	height: 50px;
+	width: 50px;
+	background-color: rgb(29, 80, 29);
+	border-radius: 50%;
+	position: absolute;
+	top: 525px;
+	left: 575px;
+	z-index: 50;
+}
+.himars__frame{
+	height: 50px;
+	width: 550px;
+	background-color: rgb(29, 80, 29);
+	border-radius: 5px;
+	position: absolute;
+	top: 500px;
+	left: 100px;
+}
+.himars__cabin{
+	height: 150px;
+	width: 100px;
+	background-color: rgb(29, 80, 29);
+	border-radius: 5px;
+	border-top-right-radius: 40px;
+	position: absolute;
+	top: 345px;
+	left: 550px;
+}
+.cabin{
+	perspective: 400px;
+}
+.cabin__glass {
+	height: 50px;
+	width: 90px;
+	background-color: rgb(38, 187, 233);
+	border-radius: 5px;
+	border-top-right-radius: 40px;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+.cabin__glass:hover{
+	opacity: 0;
+	transition: 1s;
+}
+.cabin__glass--soldier{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+.cabin__door {
+	height: 80px;
+	width: 90px;
+	background-color: rgb(65, 177, 65);
+	border-radius: 5px;
+	position: absolute;
+	top: 60px;
+	left: 5px;
+}
+
+.cabin__door:hover{
+	transform-origin:bottom right;
+	transform: rotateY(45deg);
+	transition: 0.3s;
+}
+
+.himars__rocket-boxing {
+	height: 145px;
+	width: 350px;
+	background-color: rgb(29, 80, 29);
+	border-radius: 5px;
+	position: absolute;
+	top: 350px;
+	left: 100px;
+	animation: himars-ready 6s;
+}
+.himars__rocket-boxing:hover{
+	transform-origin:bottom left;
+	transform: rotate(-30deg);
+	transition: 1s;
+}
+.rocket-boxing__trunk {
+	height: 35px;
+	width: 420px;
+	background-color: rgb(65, 177, 65);
+	border-radius: 5px;
+	position: absolute;
+	top: 10px;
+	left: 5px;
+}
+.rocket-boxing__flag{
+	height: 50px;
+	width: 60px;
+	background: linear-gradient(180deg, rgba(11,169,240,1) 40%, rgba(224,255,0,1) 50%);
+	border-radius: 5px;
+	position: absolute;
+	top: 60px;
+	left: 140px;
+}
+.rocket-boxing__rocket{
+	height: 20px;
+	width: 300px;
+	background-color: grey;
+	border-radius: 5px;
+	position: absolute;
+	top: 7px;
+	left: 5px;
+	opacity: 0;
+	animation: himars-shooting 6s linear;
+}
+.rocket-boxing__rocket::before{
+	content: "";
+	height: 30px;
+	width: 50px;
+	border-radius: 0% 100% 100% 0% / 0% 51% 49% 100%; 
+	background-color:  red;
+	position: absolute;
+	top: -5px;
+	left: -50px;
+}
+.rocket-boxing__rocket::after{
+	content: "";
+	border-style: solid;
+	border-width: 10px 0 10px 30px;
+	border-color: transparent transparent transparent red;
+	border-radius: 2px;
+	position: absolute;
+	top: 0px;
+	left: 300px;
+}
+
+@keyframes himars-ride {
+	0% {
+		transform: translate(-100%, 0px);
+	}
+	30% {
+		transform: translate(0%, 0px);
+	}
+	50% {
+		transform: translate(0%, 0px);
+	}
+	100% {
+		transform: translate(5000px, 0px);
+	}
+}
+@keyframes himars-wheels {
+	0% {
+		transform: rotate(0deg);
+	}
+	30% {
+		transform: rotate(150deg);
+	}
+	50% {
+		transform: rotate(200deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes himars-ready {
+	0% {
+		transform: rotate(0deg);
+	}
+	30% {
+		transform: rotate(0deg);
+	}
+	60% {
+		transform-origin:bottom left;
+		transform: rotate(-30deg);
+	}
+	90% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+@keyframes himars-shooting {
+	0% {
+		transform: translate(-100%, 0px);
+		opacity: 0;
+	}
+	45% {
+		transform: translate(0%, 0px);
+		opacity: 0;
+	}
+	50% {
+		transform: translate(0%, 0px);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(10000px, 0px);
+	}
+}
