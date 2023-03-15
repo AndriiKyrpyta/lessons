@@ -1,0 +1,133 @@
+@import url(reset.css);
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 20px;
+	color: #495057;
+}
+[class*="__container"] {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+/*========================*/
+main{
+	flex: 1 1 auto;
+}
+.header__title, .footer__title{
+	max-height: 100px;
+	margin: 20px;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 20px;
+	color: #495057;
+	text-align: center;
+}
+.main__categories {
+	padding: 50px 0;
+}
+/*==========================*/
+.categories__menu {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 44px;
+}
+.menu__item {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 25px;
+}
+.menu__items {
+	display: flex;
+	column-gap: 20px;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 25px;
+}
+.menu__items--color{
+	color: rgba(73, 80, 87, 0.5);
+}
+/*=====================================*/
+.categories__cards {
+  display: flex;
+  margin: 0 -15px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+  row-gap: 45px;
+}
+.categories__column {
+  flex: 0 0 33.333%;
+  padding: 0px 15px;
+}
+.item-categories {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100%;
+}
+.item-categories img{
+	border-radius: 3px;
+}
+.item-categories__image {
+  max-width: 100%;
+  margin-bottom: 30px;
+  position: relative;
+}
+.image__btn {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	font-weight: 700;
+	font-size: 8px;
+	line-height: 2.5;
+	color: #f8f9fa;
+	padding: 3px 12px;
+	background: rgba(33, 37, 41, 0.3);
+	border-radius: 3px;
+}
+.item-categories__info{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	row-gap: 15px;
+	flex-grow: 1;
+}
+.item-categories__title {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 40px;
+	color: #212529;
+}
+.item-categories__text {
+	flex-grow: 1;
+}
+.item-categories__author {
+	width: 100%;
+	border-top: 1px solid #e5e5e5;
+	padding-top: 15px;
+}
+/*=====================================*/
+.categories__button{
+	display: flex;
+	justify-content: center;
+}
+.button__categories{
+	padding: 8px 50px;
+	background: #212529;
+	border-radius: 3px;
+	font-weight: 500;
+	line-height: 2.08;
+	color: #f8f9fa;
+}
