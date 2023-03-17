@@ -1,0 +1,150 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.6;
+	color: #9C9C9C;
+}
+.wrapper{
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main{
+	flex-grow: 1;
+}
+[class*="__container"]{
+	max-width: 1230px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+
+}
+/*-----------------------------*/
+.header__title, .footer__title{
+	max-height: 100px;
+	margin: 20px;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 20px;
+	color: #495057;
+	text-align: center;
+}
+/*------------------------------*/
+.page__achievement{
+	margin: 100px 0px;
+}
+.header-achievement {
+	position: relative;
+}
+.header-achievement__title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #000000;
+	margin-bottom: 40px;
+}
+.header-achievement__title::after{
+	position: absolute;
+	content: "";
+	height: 2px;
+	background-color: #000000;
+	width: 39%;
+	margin-left: 15px;
+	top: 10px;
+
+}
+/*-------------------------------*/
+.achievement__items {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+.achievement__item {
+	display: flex;
+	gap: 120px;
+	align-items: center;
+}
+.item-achievement__image {
+	flex: 0 0 62%;
+}
+.item-achievement__image img{
+	max-width: 100%;
+}
+.item-achievement__about {
+	flex: 0 1 32%;
+}
+.item-achievement__title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.4;
+	color: #333333;
+	margin-bottom: 20px;
+}
+/*----------------------------*/
+.room__header{
+	text-align: center;
+	max-width: 520px;
+	margin: 0 auto;
+	margin-bottom: 53px;
+}
+.room__title {
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 1.4;
+	color: #000000;
+	margin-bottom: 40px;
+}
+.room__subtitle {
+	color: #000000;
+}
+.room__main-image{
+	margin-bottom: 100px;
+}
+.room__main-image img{
+	max-width: 100%;
+}
+/*---------------------------*/
+.text__container {
+	display: flex;
+	gap: 30px;
+	margin-bottom: 80px;
+}
+.text__project {
+	flex: 0 0 48.75%;
+}
+.text__project p {
+	margin-bottom: 60px;
+}
+.text__title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 140%;
+	color: #333333;
+	margin-bottom: 25px;
+}
+.text__footer {
+	display: flex;
+	gap: 80px;
+}
+.text__design {
+	flex: 0 0 48.75%;
+}
+.text__design p{
+	margin-bottom: 30px;
+}
+/*--------------------------*/
+.gallery__body {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	margin-bottom: 100px;
+}
+.gallery__body img{
+	max-width: 100%;
+}
