@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 16</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">Домашнє завдання №16 (HTML форми)</header>
+		<main class="page">
+			<div class="page__container">
+				<div class="page__practice">
+					<form class="form" method="post" action="https://jsonplaceholder.typicode.com/posts" >
+						<div class="form__line">
+							<input id="name" class="form__input" type="text" name="username" value="" placeholder="Введіть ваше ім'я" autocomplete="off" maxlength="10" minlength="3" required>
+							<label class="form__label" for="name">Введіть ваше ім'я</label>
+						</div>
+						<div class="form__line">
+							<input id="mail" class="form__input" type="email" name="mail" value="" placeholder="mail@gmail.com" autocomplete="off" required>
+							<label class="form__label" for="mail">Введіть ваш E-mail</label>
+						</div>
+						<div class="form__line">
+							<input class="form__input" type="hidden" name="token" value="hidden">
+						</div>
+						<div class="form__line">
+							<input id="phone" class="form__input" type="tel" name="phone" value="" placeholder="+38088-88-88-888" autocomplete="off" required>
+							<label class="form__label" for="phone">Введіть ваш телефон</label>
+						</div>
+						<div class="form__line">
+							<input id="password" class="form__input" type="password" name="password" value="" placeholder="*******" autocomplete="off" minlength="5" required>
+							<label class="form__label" for="password">Введіть ваш пароль</label>
+						</div>
+						<div class="form__line">
+							<input class="form__input" type="number" name="number" value="" placeholder="Введіть ваш номер" autocomplete="off" required>
+						</div>
+						<div class="form__line">
+							<input class="form__input" type="color" name="color" value="#ff0000" autocomplete="off">
+						</div>
+						<div class="form__line">
+							<input class="form__input" type="search" name="search" placeholder="Пошук" autocomplete="off">
+						</div>
+						<div class="form__line">
+							<input class="form__input" type="date" name="date" autocomplete="off">
+						</div>
+						<div class="form__line">
+							<input class="form__input" type="range" name="range" autocomplete="off">
+						</div>
+						<div class="form__line">
+							<input id="car-01" class="form__input" type="checkbox" name="car" required>
+							<label class="form__label" for="car-01">Є авто?</label>
+						</div>
+						<div class="form__line">
+							<input id="home" checked class="form__input" type="checkbox" name="home" required>
+							<label class="form__label" for="home">Є де жити?</label>
+						</div>
+						<div class="form__line">
+							<div class="form__title">Улюблене хобі:</div>
+							<div class="form__radio">
+								<input id="bike" class="form__input form__input--radio" type="radio" name="hobby" value="bike" required>
+								<label class="form__label" for="bike">Велосипед</label>
+							</div>
+							<div class="form__radio">
+								<input id="run" class="form__input form__input--radio" type="radio" name="hobby" value="run" required>
+								<label class="form__label" for="run">Біг</label>
+							</div>
+							<div class="form__line">
+								<input class="form__input" type="file" name="file" accept="image/png, image/jpeg" multiple>
+							</div>
+							<div class="form__line">
+								<textarea class="form__area" name="message" autocomplete="off"></textarea>
+							</div>
+							<div class="form__line--list">
+								<select name="list">
+									<option value="1">Пункт 1</option>
+									<option value="2">Пункт 2</option>
+									<option value="3">Пункт 3</option>
+									<option value="4">Пункт 4</option>
+									<option value="5">Пункт 5</option>
+								</select>
+							</div>
+							<div class="form__line--button">
+								<button class="button" type="button">Я просто кнока</button>
+								<p><button class="button" type="reset">Я кнока яка чистить форму</button></p>
+								<p><button class="button" type="submit">Я кнопка яка відправляє форму</button></p>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="page__checkout checkout">
+					<div class="checkout__title">Checkout</div>
+					<div class="checkout__subtitle">There are 3 products in your cart</div>
+				<form class="checkout__form form-checkout" method="post" action="https://jsonplaceholder.typicode.com/posts">
+					<h2 class="form-checkout__title">Billing Details</h2>
+					<div class="form-checkout__items">
+						<div class="form-checkout__item">
+							<input class="form-checkout__input" type="text" name="first-name" value="" placeholder="First name*" autocomplete="off" required>
+						</div>
+						<div class="form-checkout__item">
+							<input class="form-checkout__input" type="text" name="last-name" value="" placeholder="Last name*" autocomplete="off" required>
+						</div>
+						<div class="form-checkout__item">
+							<input class="form-checkout__input" type="text" name="address" value="" placeholder="Address*" autocomplete="off" required>
+						</div>
+						<div class="form-checkout__item">
+							<input class="form-checkout__input" type="text" name="address2" value="" placeholder="Address line 2" autocomplete="off">
+						</div>
+						<div class="form-checkout__item--list">
+							<select class="form-checkout__input" name="country"  required>
+								<option value="" selected disabled>Country*</option>
+								<option value="Ukraine">Ukraine</option>
+								<option value="United States">United States</option>
+								<option value="United Kingdom">United Kingdom</option>
+								<option value="Poland">Poland</option>
+							</select>
+						</div>
+						<div class="form-checkout__item">
+							<input class="form-checkout__input" type="text" name="city-town" value="" placeholder="City/Town*" autocomplete="off" required>
+						</div>
+						<div class="form-checkout__item">
+							<input class="form-checkout__input" type="text" name="postcode-ZIP-01" value="" placeholder="Postcode / ZIP*" autocomplete="off" required>
+						</div>
+						<div class="form-checkout__item">
+							<input class="form-checkout__input" type="tel" name="phone-01" value="" placeholder="Phone*" autocomplete="off" required>
+						</div>
+						<div class="form-checkout__item">
+							<input class="form-checkout__input" type="text" name="postcode-ZIP-02" value="" placeholder="Postcode / ZIP*" autocomplete="off" required>
+						</div>
+						<div class="form-checkout__item">
+							<input class="form-checkout__input" type="tel" name="phone-02" value="" placeholder="Phone*" autocomplete="off" required>
+						</div>
+						<textarea class="form-checkout__text" name="additional-information" cols="30" rows="10" placeholder="Additional information"></textarea>
+						<div class="form-checkout__radio">
+							<div class="form-checkout__account account">
+								<input class="account__input" type="checkbox" name="account" value="Create Account" id="account" checked >
+								<label class="account__label" for="account">Create Account</label>
+							</div>
+							<div class="form-checkout__address">
+								<input class="account__input" type="checkbox" name="account" value="different address" id="address" >
+								<label class="account__label" for="address">Ship to a different address?</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-checkout__discount discount">
+						<h2 class="discount__title">
+							Apply Coupon to get discount!
+						</h2>
+						<div class="discount__input">
+							<input class="form-checkout__input" type="text" placeholder="Coupon code">
+							<button type="submit" class="discount__button">Apply Code</button>
+						</div>
+					</div>
+				</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">HTML форми</footer>
+	</div>
+</body>
+</html>
