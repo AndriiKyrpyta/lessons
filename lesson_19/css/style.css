@@ -1,0 +1,96 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.6;
+	color: #9C9C9C;
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+[class*="__container"] {
+	max-width: 1230px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+/*----------HEADER----------------*/
+.header__title, .footer__title{
+	font-weight: 600;
+	font-size: 30px;
+	text-align: center;
+	padding: 20px 0;
+	color: #333333;
+}
+/*-------SECTION ROOM--------*/
+.room__content {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+	margin-bottom: 80px;
+}
+.room__images{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+}
+.room__image:nth-child(3){
+	grid-column: span 2;
+}
+.project__title, .design__title{
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 140%;
+	color: #333333;
+	margin-bottom: 24px;
+}
+.project__text {
+	margin-bottom: 60px;
+}
+.project__date {
+	display: inline-block;
+	margin-right: 80px;
+}
+.project__furnitur {
+	display: inline-block;
+}
+.design__text p{
+	margin-bottom: 30px;
+}
+.room__image img{
+	max-width: 100%;
+}
+@media (max-width: 769.8px){
+	.room__content {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 15px;
+		margin-bottom: 30px;
+	}
+	.design__text p{
+		margin-bottom: 15px;
+	}
+	.project__text {
+		margin-bottom: 30px;
+	}
+	.project__title, .design__title{
+		margin-bottom: 12px;
+	}
+	.room__images{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 15px;
+	}
+	.room__image:nth-child(3) {
+		grid-column: span 1;
+  }
+}
